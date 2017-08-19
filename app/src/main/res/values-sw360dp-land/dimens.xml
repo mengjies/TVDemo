@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--360dp基准--><resources>    <!--main -->    <dimen name="main_margin_start">33.0dp</dimen>
+    <dimen name="main_margin_end">33.0dp</dimen>
+    <dimen name="main_margin_top">29.0dp</dimen>
+    <dimen name="main_margin_bottom">18.0dp</dimen>
+    <dimen name="content_titlebar_space">5.0dp</dimen>
+    <dimen name="nav_content_space">10.0dp</dimen>
+    <dimen name="title_height">13.0dp</dimen>
+    <dimen name="nav_height">44.0dp</dimen>
+    <dimen name="nav_item_width">33.0dp</dimen>
+    <!--item-->    <dimen name="item_width_1">78.0dp</dimen>
+    <dimen name="item_width_2">117.0dp</dimen>
+    <dimen name="item_width_3">142.0dp</dimen>
+    <dimen name="item_width_4">292.0dp</dimen>
+    <dimen name="item_height_1">71.0dp</dimen>
+    <dimen name="item_height_2">150.0dp</dimen>
+    <dimen name="item_space">8.0dp</dimen>
+    <dimen name="item_padding">4.0dp</dimen>
+    <dimen name="border_stroke_width">1.0dp</dimen>
+    <!--文字大小-->    <dimen name="text_size_m">8.0sp</dimen>
+    <dimen name="text_size_l">12.0sp</dimen>
+    <!--chapter info(至12集)-->    <dimen name="chapter_height">15.0dp</dimen>
+    <dimen name="chapter_width">33.0dp</dimen>
+    <dimen name="chapter_padding_start">3.0dp</dimen>
+    <!--card底部-->    <dimen name="item_info_height">32.0dp</dimen>
+    <dimen name="item_info_padding_start">5.0dp</dimen>
+    <dimen name="item_info_padding_top">3.0dp</dimen>
+    <dimen name="item_info_padding_bottom">3.0dp</dimen>
+</resources>

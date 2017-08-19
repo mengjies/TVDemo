@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_info_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_item_info"
+        android:visibility="invisible"
+        android:paddingBottom="@dimen/item_info_padding_bottom"
+        android:paddingEnd="@dimen/item_info_padding_start"
+        android:paddingStart="@dimen/item_info_padding_start"
+        android:paddingTop="@dimen/item_info_padding_top">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未知"
+            android:textSize="@dimen/text_size_l"
+            android:textColor="@color/text_white"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="未知"
+            android:textSize="@dimen/text_size_m"
+            android:textColor="@color/text_gray"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_chapter"
+        android:layout_width="@dimen/chapter_width"
+        android:layout_height="@dimen/chapter_height"
+        android:layout_above="@id/rl_info"
+        android:layout_alignParentRight="true"
+        android:background="@color/bg_chapter_info"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="至"
+            android:textSize="@dimen/text_size_m"
+            android:textColor="@color/text_white"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:textSize="@dimen/text_size_m"
+            android:textColor="@color/text_chapter_number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="集"
+            android:textSize="@dimen/text_size_m"
+            android:textColor="@color/text_white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

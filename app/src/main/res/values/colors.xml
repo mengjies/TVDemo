@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="lightskyblue">#87CEFA</color>
+    <color name="greenyellow">#ADFF2F</color>
+
+    <!--文字颜色-->
+    <color name="text_white">#ffffff</color>
+    <color name="text_gray">#ded0ff</color>
+
+    <!--item info-->
+    <color name="bg_item_info">#8e61ff</color>
+
+    <!--chapter info-->
+    <color name="bg_chapter_info">#4d000000</color><!-- 70%:4d -->
+    <color name="text_chapter_number">#ffde00</color>
+</resources>

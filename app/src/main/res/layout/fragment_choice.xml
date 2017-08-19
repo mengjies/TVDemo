@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.pbtd.tvdemo.widget.SmoothHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.pbtd.tvdemo.widget.DrawingOrderRelativeLayout
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center"
+        android:layout_marginRight="@dimen/main_margin_end"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:gravity="center">
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view_history"
+            android:layout_width="@dimen/item_width_1"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_marginLeft="@dimen/main_margin_start"
+            android:background="@drawable/btn_history"
+            android:focusable="true">
+
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:scaleType="fitXY"
+                android:focusable="true"
+                android:src="@drawable/btn_history" />-->
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view_search"
+            android:layout_width="@dimen/item_width_1"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_below="@id/view_history"
+            android:layout_marginTop="@dimen/item_space"
+            android:layout_marginLeft="@dimen/main_margin_start"
+            android:background="@drawable/btn_search"
+            android:focusable="true">
+
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:scaleType="centerCrop"
+                android:focusable="true"
+                android:src="@drawable/btn_search" />-->
+
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view_multi_screen"
+            android:layout_width="@dimen/item_width_1"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_below="@id/view_search"
+            android:layout_marginTop="@dimen/item_space"
+            android:layout_marginLeft="@dimen/main_margin_start"
+            android:background="@drawable/btn_multi_screen"
+            android:focusable="true">
+
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:scaleType="centerCrop"
+                android:focusable="true"
+                android:src="@drawable/btn_multi_screen" />-->
+
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view1"
+            android:layout_width="@dimen/item_width_4"
+            android:layout_height="@dimen/item_height_2"
+            android:layout_alignTop="@id/view_history"
+            android:layout_marginLeft="@dimen/item_space"
+            android:layout_toRightOf="@+id/view_search"
+            android:tag="tag1"
+            android:focusable="true">
+
+            <com.pbtd.tvdemo.view.widget.CardItemView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:card_type="tv"
+                app:card_image="@drawable/pic_01"
+                app:card_title="寻人大师"
+                app:card_desc="描述"
+                app:card_number="6"
+                android:tag="tag1s"/>
+
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view2"
+            android:layout_width="@dimen/item_width_3"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_alignTop="@+id/view_multi_screen"
+            android:layout_marginLeft="@dimen/item_space"
+            android:layout_toRightOf="@+id/view_multi_screen"
+            android:background="@drawable/border_shape"
+            android:tag="tag2"
+            android:focusable="true">
+
+            <com.pbtd.tvdemo.view.widget.CardItemView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:card_type="movie"
+                app:card_image="@drawable/pic_02"
+                app:card_title="标题"
+                app:card_desc="描述"
+                app:card_number="6"
+                android:tag="tag2s"/>
+
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view3"
+            android:layout_width="@dimen/item_width_3"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_alignTop="@+id/view_multi_screen"
+            android:layout_marginLeft="@dimen/item_space"
+            android:layout_toRightOf="@+id/view2"
+            android:background="@drawable/border_shape"
+            android:tag="tag3"
+            android:focusable="true">
+
+            <com.pbtd.tvdemo.view.widget.CardItemView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:card_type="movie"
+                app:card_image="@drawable/pic_03"
+                app:card_title="标题"
+                app:card_desc="描述"
+                app:card_number="6"
+                android:tag="tag3s"/>
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view4"
+            android:layout_width="@dimen/item_width_2"
+            android:layout_height="@dimen/item_height_2"
+            android:layout_alignTop="@+id/view_history"
+            android:layout_marginLeft="@dimen/item_space"
+            android:layout_toRightOf="@+id/view1"
+            android:background="@drawable/border_shape"
+            android:tag="tag4"
+            android:focusable="true">
+
+            <com.pbtd.tvdemo.view.widget.CardItemView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:card_type="tv"
+                app:card_image="@drawable/pic_04"
+                app:card_title="标题"
+                app:card_desc="描述"
+                app:card_number="6"
+                android:tag="tag4s"/>
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view5"
+            android:layout_width="@dimen/item_width_2"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_alignTop="@+id/view_multi_screen"
+            android:layout_marginLeft="@dimen/item_space"
+            android:layout_toRightOf="@+id/view3"
+            android:background="@drawable/border_shape"
+            android:tag="tag5"
+            android:focusable="true">
+
+            <com.pbtd.tvdemo.view.widget.CardItemView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:card_type="movie"
+                app:card_image="@drawable/pic_05"
+                app:card_title="标题"
+                app:card_desc="描述"
+                app:card_number="6"
+                android:tag="tag5s"/>
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view6"
+            android:layout_width="@dimen/item_width_2"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_alignTop="@+id/view_history"
+            android:layout_marginLeft="@dimen/item_space"
+            android:layout_toRightOf="@+id/view4"
+            android:background="@drawable/border_shape"
+            android:tag="tag6"
+            android:focusable="true">
+
+            <com.pbtd.tvdemo.view.widget.CardItemView
+                android:id="@+id/card6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:card_type="movie"
+                app:card_image="@drawable/pic_06"
+                app:card_title="标题"
+                app:card_desc="描述"
+                app:card_number="6"
+                android:tag="tag6s"/>
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view7"
+            android:layout_width="@dimen/item_width_2"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_alignTop="@+id/view_search"
+            android:layout_marginLeft="@dimen/item_space"
+            android:layout_toRightOf="@+id/view4"
+            android:background="@drawable/border_shape"
+            android:tag="tag7"
+            android:focusable="true">
+
+            <com.pbtd.tvdemo.view.widget.CardItemView
+                android:id="@+id/card7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:card_type="movie"
+                app:card_image="@drawable/pic_07"
+                app:card_title="标题"
+                app:card_desc="描述"
+                app:card_number="6"
+                android:tag="tag7s"/>
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view8"
+            android:layout_width="@dimen/item_width_2"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_alignTop="@+id/view_multi_screen"
+            android:layout_marginLeft="@dimen/item_space"
+            android:layout_toRightOf="@+id/view5"
+            android:background="@drawable/border_shape"
+            android:tag="tag8"
+            android:focusable="true">
+
+            <com.pbtd.tvdemo.view.widget.CardItemView
+                android:id="@+id/card8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:card_type="movie"
+                app:card_image="@drawable/pic_08"
+                app:card_title="标题"
+                app:card_desc="描述"
+                app:card_number="6"
+                android:tag="tag8s"/>
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view9"
+            android:layout_width="@dimen/item_width_2"
+            android:layout_height="@dimen/item_height_2"
+            android:layout_alignTop="@+id/view_history"
+            android:layout_marginLeft="@dimen/item_space"
+            android:layout_toRightOf="@+id/view6"
+            android:background="@drawable/border_shape"
+            android:tag="tag9"
+            android:focusable="true">
+
+            <com.pbtd.tvdemo.view.widget.CardItemView
+                android:id="@+id/card9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:card_type="movie"
+                app:card_image="@drawable/pic_09"
+                app:card_title="标题"
+                app:card_desc="描述"
+                app:card_number="6"
+                android:tag="tag9s"/>
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+        <com.pbtd.tvdemo.widget.MetroItemFrameLayout
+            android:id="@+id/view10"
+            android:layout_width="@dimen/item_width_2"
+            android:layout_height="@dimen/item_height_1"
+            android:layout_alignTop="@+id/view_multi_screen"
+            android:layout_marginLeft="@dimen/item_space"
+            android:layout_toRightOf="@+id/view8"
+            android:background="@drawable/border_shape"
+            android:tag="tag10"
+            android:focusable="true">
+
+            <com.pbtd.tvdemo.view.widget.CardItemView
+                android:id="@+id/card10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:card_type="movie"
+                app:card_image="@drawable/pic_10"
+                app:card_title="标题"
+                app:card_desc="描述"
+                app:card_number="6"
+                android:tag="tag10s"/>
+
+        </com.pbtd.tvdemo.widget.MetroItemFrameLayout>
+
+    </com.pbtd.tvdemo.widget.DrawingOrderRelativeLayout>
+
+</com.pbtd.tvdemo.widget.SmoothHorizontalScrollView>
